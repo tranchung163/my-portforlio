@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
 import Logo from './Logo'
-import { TwitterIcon, DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon }  from './Icons'
+import { TwitterIcon, GithubIcon, LinkedInIcon, PinterestIcon, LeetCodeIcon }  from './Icons'
 import { motion } from 'framer-motion';
 
 const CustomLink = ({ href, title, className="" }) => {
@@ -62,12 +62,12 @@ return (
                     <PinterestIcon />
 
                     </motion.a>
-                    <motion.a href='/' target={"_blank"}
+                    <motion.a href='https://leetcode.com/u/ntran562/' target={"_blank"}
                     whileHover={{ y: -2 }}
                     whileTap={{scale:0.9}}
                     className="w-6 ml-3"
                     >
-                    <DribbbleIcon />
+                    <LeetCodeIcon />
                     </motion.a>
             </nav>
 
