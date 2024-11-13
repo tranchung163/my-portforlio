@@ -9,7 +9,7 @@ const Footer = () => {
           <span>&copy; 2023 All Rights Reserved.
           </span>
           <div className='flex items-center'>Build With <span className='text-primary text-2xl px-1' >&#9825;</span>
-          by&nbsp;<Link href="devdreaming.com" className='underline'>CodeBucks</Link> </div>
+          by&nbsp;<Link href="https://devdreaming.com/about" className='underline'>CodeBucks</Link> </div>
         </div>
         <div>
           <p>Designed and Developed by <a href="https://github.com/tranchung163/my-portforlio" target="_blank" rel="noopener noreferrer" className='underline'>Ngoc Chung Tran</a></p>
