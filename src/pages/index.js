@@ -2,6 +2,9 @@ import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import profilePic from '../../public/images/profile/developer-pic-1.png'
+import { LinkArrow } from '@/components/Icons'
+import AnimatedText from '@/components/AnimatedText'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -16,14 +19,27 @@ export default function Home() {
             <div className='w-1/2'>
               <Image src={profilePic} alt="CodeBucks" className="w-full h-auto" />
               </div>
-              <div className='w-1/2'>
-                <h1>
-                  Turning Vision Into Reality With Code and Design.
-                </h1>
-                <p>
+              <div className='w-1/2 flex-col items-center self-center'>
+
+                <AnimatedText text="Turning Vision Into Reality With Code and Design." className="!text-6xl !text-left"/>
+                <p className='my-4 text-base font-medium'>
                 As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
                 Explore my latest projects and articles, showcasing my expertise in React.js and web development.
                 </p>
+                <div className='flex items-center self-start mt-2'>
+                  <Link href="https://docs.google.com/document/d/11-nRUmspKO0lEswPUvLxSf9zUau6ZeK9CRyxSIdaax4/edit?tab=t.0f" target={"_blank"}
+                  className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
+                  border border-solid border-transparent hover:border-dark'
+                  download={true}
+                  >Resume <LinkArrow className={'w-6 ml-1'} />
+                  
+                  </Link>
+
+                  <Link href="mailto: tranchung163@gmail.com" target={"_blank"}
+                  className='flex items-center ml-4 text-lg font-medium capitalize text-dark underline'
+                  >Contact</Link>
+                  
+                </div>
               </div>
           </div>
         </Layout>
